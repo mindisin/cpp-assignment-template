@@ -26,16 +26,3 @@ void delete_symbols(char symbol, string str) {
         if(str[i] == symbol) str.erase(i);
     }
 }
-
-
-// Реализовать функцию string hw02(string str), которая принимает строку str
-//и удаляет все повторяющиеся символы, оставляя только первое вхождение каждого символа
-
-// Замечания:
-// 1. Нельзя использовать алгоритмы стандартной библиотеки
-// 2. Можно использовать только методы std::string
-
-// Примеры:
-// 1. hw02("Hello") => return "Helo"
-// 2. hw02("AABBCC") => return "ABC"
-// 3. hw02("!HHWW02COMPLLETEE!") => return "!HW02COMPLET"
