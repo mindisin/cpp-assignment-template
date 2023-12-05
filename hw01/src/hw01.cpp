@@ -4,7 +4,9 @@
 int hw01(int start, int end)
 {
     int sum = 0;
+
     if(!is_two_digit(start) || !is_two_digit(end)) return -1;
+
     for(int i = start; i <= end; ++i)
     {
         if(is_prime(i))
@@ -13,6 +15,7 @@ int hw01(int start, int end)
             sum += i / 10 % 10;
         }
     }
+
     return sum;
 }
 
@@ -28,6 +31,7 @@ bool is_prime(int x)
         if(x % i == 0)
             return false;
     }
+    
     return true;
 }
 
