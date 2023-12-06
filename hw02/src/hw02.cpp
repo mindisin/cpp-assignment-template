@@ -12,9 +12,7 @@ string hw02(string input_str)
 bool more_one_symbol(char symbol, string str, int idx){
     int count = 0;
     for(; idx < str.length(); ++idx) {
-        if(str.find(symbol)){
-            ++count;
-        }
+        if(str.find(symbol)) ++count;
         if(count > 1) return false;
     }
 
